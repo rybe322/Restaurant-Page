@@ -11,7 +11,7 @@
 </div>
 
 */
-import { createHTMLElement } from "./helpers"
+import { createHTMLElement, elFactory } from "./helpers"
 
 
 export const Header = () => {

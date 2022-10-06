@@ -20,6 +20,15 @@ export const elFactory = (type, attributes, children) => {
       el.appendChild(child)
     }
   })
-
   return el
 }
+/*
+const markup = elFactory(
+  'div',
+  { class: 'my-component' },
+  elFactory('span', {}, 'Hello World!'),
+  ' Thanks for reading my blog!'
+)
+
+document.body.appendChild(markup)
+*/

@@ -42,7 +42,7 @@ export const Home = () => {
   const getAbout = () => {
     const aboutDiv = createHTMLElement('div', {id:'about-div'})
     const aboutH2 = createHTMLElement('h2', {textContent: 'About'})
-    const aboutP = createHTMLElement('p', {textContent: 'About section'})
+    const aboutP = createHTMLElement('p', {textContent: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'})
     aboutDiv.appendChild(aboutH2)
     aboutDiv.appendChild(aboutP)
     return aboutDiv
@@ -81,6 +81,7 @@ export const Home = () => {
   }
 
   const getHome = () => {
+    contentDiv.appendChild(createHTMLElement('h1',{id: 'restaurant-name' ,textContent: 'Parallel 37' }     ))
     contentDiv.appendChild(getAbout())
     contentDiv.appendChild(getHours())
     contentDiv.appendChild(getLocation())

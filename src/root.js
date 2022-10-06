@@ -23,6 +23,34 @@ export const Root = () => {
     
   }
 
+  const drawButtonBorder = (button) => {
+    const buttons = document.querySelectorAll('button')
+    buttons.forEach(button => button.style.border = 'none')
+    console.log('hellow from draw')
+    console.log(button)
+    button.style.border = '1px solid black'
+  }
+
+  const render = (button) => {
+    console.log('hello from render')
+    console.log('button', button)
+    // clearButtonBorder()
+    drawButtonBorder(button)
+    switch(button.id) {
+      case 'home' :
+        renderHome()
+        break;
+      case 'menu' :
+        renderMenu()
+        break;
+      case 'contact' :
+        renderContact()
+        break;
+      default:
+        break;
+    }
+  }
+
   const renderHome = () => {
     clear()
     root.appendChild(home.getHome())
@@ -38,6 +66,6 @@ export const Root = () => {
     root.appendChild(contact.getContact())
   }
 
-  return {initialLoad, renderHome, renderMenu, renderContact}
+  return {initialLoad, renderHome, renderMenu, renderContact, render}
 
 }

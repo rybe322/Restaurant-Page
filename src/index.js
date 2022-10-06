@@ -9,9 +9,11 @@ import { Header } from "./header";
 import { Root } from "./root";
 
 function handleButtonClick() {
+  /*
   switch(this.id) {
     case 'home' :
-      Root().renderHome()
+      //Root().renderHome()
+      Root().render(this)
       break;
     case 'menu' :
       Root().renderMenu()
@@ -22,6 +24,8 @@ function handleButtonClick() {
     default:
       break;
   }
+  */
+  Root().render(this)
   
 }
 
