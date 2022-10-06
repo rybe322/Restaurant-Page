@@ -56,15 +56,14 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px; 
+
 }
 
 button {
   font-size: 2rem;
   border: none;
-  padding: 10px;
   font-family: inherit;
   background-color: inherit;
 }
