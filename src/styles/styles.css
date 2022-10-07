@@ -1,4 +1,17 @@
 
+:root {
+  --h1-size: 4rem;
+  --h2-size: 2rem;
+  --section-border-top: 10px solid black;
+  
+  --header-background: #B7999C;
+  --content-background: #F6B6BC;
+  
+}
+
+#content {
+}
+
 html { 
 
 }
@@ -7,6 +20,8 @@ html {
 body {
   font-family: 'AvaraBold', sans-serif;
 }
+
+
 
 
 #root {
@@ -24,10 +39,10 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: var(--h1-size);
 }
 h2 {
-  font-size: 2rem;
+  font-size: var(--h2-size);
 }
 #content {
 
@@ -51,7 +66,7 @@ HEADER CSS START
 header {
   width: 500px;
   padding: 10px;
-  border-bottom: 10px solid black;
+  border-bottom: var(--section-border-top);
 }
 
 nav {
@@ -62,7 +77,7 @@ nav {
 }
 
 button {
-  font-size: 2rem;
+  font-size: 2.5rem;
   border: none;
   font-family: inherit;
   background-color: inherit;
@@ -86,7 +101,7 @@ HOME CSS START
   width: 500px;
   margin: 0 auto;
   padding-top: 20px;
-  border-top: 10px solid black;
+  border-top: var(--section-border-top);
 }
 
 #about-div p {
@@ -111,4 +126,51 @@ HOME CSS START
 HOME CSS END
 */
 
+/*
+MENU CSS START
+*/
+#chef-div, #cocktail-div, #desert-div {
+  margin: 0 auto;
+  width: 500px;
+  text-align: left;
+  padding-top: 20px;
+  border-top: var(--section-border-top);
+}
 
+
+#chef-div h2, #cocktail-div h2, #desert-div h2 {
+  text-align: center;  
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.menu-item-price {
+  font-size: .9rem;
+}
+
+.menu-item-description {
+  font-size: .8rem;
+}
+
+.menu-item {
+  border-bottom: 5px dotted black;
+}
+
+.menu-item-name, .menu-item-price, .menu-item-description {
+  margin-bottom: 10px;
+}
+
+#chef-div .menu-item:last-child {
+  border: none;
+}
+
+/*
+MENU CSS END
+*/

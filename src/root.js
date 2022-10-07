@@ -26,9 +26,12 @@ export const Root = () => {
   const drawButtonBorder = (button) => {
     const buttons = document.querySelectorAll('button')
     buttons.forEach(button => button.style.border = 'none')
+    /*
+    FOR DRAWING THE BORDER AROUND THE BUTTONS TODO
     console.log('hellow from draw')
     console.log(button)
     button.style.border = '1px solid black'
+    */
   }
 
   const render = (button) => {

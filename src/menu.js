@@ -19,7 +19,7 @@ export const Menu = () => {
   }
   
   const getChefsChoice = () => {
-    const menuItemDiv = createHTMLElement('div', {id:'menu-item-container'})
+    const menuItemDiv = createHTMLElement('div', {id:'chef-div'})
     const chefH2 = createHTMLElement('h2', {textContent: 'Chef\'s Choice'})
     menuItemDiv.appendChild(chefH2)
     menuItemDiv.appendChild(createMenuItem('Dish Name 1','$100', 'Tempus egestas sed sed risus. Duis convallis convallis tellus id. Ultricies tristique nulla aliquet enim tortor at. Cursus turpis massa tincidunt dui. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo.'))
@@ -30,7 +30,7 @@ export const Menu = () => {
   
 
   const getCocktails = () => {
-    const cocktailDiv = createHTMLElement('div', {id:'cocktail-item-container'})
+    const cocktailDiv = createHTMLElement('div', {id:'cocktail-div'})
     const cocktailH2 = createHTMLElement('h2', {textContent: 'Chef\'s Cocktails'})
     cocktailDiv.appendChild(cocktailH2)
     cocktailDiv.appendChild(createMenuItem('Cocktail Name 1','$30', 'Tempus egestas sed sed risus. Duis convallis convallis tellus id.'))
@@ -40,7 +40,7 @@ export const Menu = () => {
   }
 
   const getDeserts = () => {
-    const desertDiv = createHTMLElement('div', {id:'desert-item-container'})
+    const desertDiv = createHTMLElement('div', {id:'desert-div'})
     const desertH2 = createHTMLElement('h2', {textContent: 'Chef\'s Deserts'})
     desertDiv.appendChild(desertH2)
     desertDiv.appendChild(createMenuItem('Desert Name 1','$30', 'Duis convallis convallis tellus id.'))
