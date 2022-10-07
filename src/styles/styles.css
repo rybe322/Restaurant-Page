@@ -10,6 +10,7 @@
 }
 
 #content {
+  max-width: 500px;
 }
 
 html { 
@@ -173,4 +174,26 @@ h1 {
 
 /*
 MENU CSS END
+*/
+
+/*
+CONTACT CSS START
+*/
+#contact-header {
+}
+
+
+.contact-div {
+  text-align: left;  
+  margin-top: 10px;
+  border-bottom: var(--section-border-top);
+
+}
+
+.contact-div p {
+  font-size: 1.5rem;
+}
+
+/*
+CONTACT CSS END
 */
