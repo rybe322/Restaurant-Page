@@ -26,6 +26,9 @@ export const Root = () => {
   const drawButtonBorder = (button) => {
     const buttons = document.querySelectorAll('button')
     buttons.forEach(button => button.style.border = 'none')
+    console.log(getCSSVariable('section-border-dotted'))
+    button.style.borderLeft = getCSSVariable('section-border-dotted')
+    button.style.borderRight = getCSSVariable('section-border-dotted')
     /*
     FOR DRAWING THE BORDER AROUND THE BUTTONS TODO
     console.log('hellow from draw')
@@ -33,6 +36,9 @@ export const Root = () => {
     button.style.border = '1px solid black'
     */
   }
+
+  const getCSSVariable = (variableName) => getComputedStyle(document.documentElement).getPropertyValue(`--${variableName}`)
+  
 
   const render = (button) => {
     console.log('hello from render')
