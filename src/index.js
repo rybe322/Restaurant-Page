@@ -7,6 +7,8 @@ You should have event listeners for each tab that wipes out the current contents
 */
 import { Header } from "./header";
 import { Root } from "./root";
+import './styles/reset_heavy.css'
+import './styles/styles.css'
 
 function handleButtonClick() {
   /*
