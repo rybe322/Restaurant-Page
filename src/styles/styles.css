@@ -4,7 +4,7 @@
   --h2-size: 2rem;
   --button-size: 2.5rem;
   --section-border-top: 5px solid var(--font-color);
-  --section-border-dotted: 5px dotted var(--font-color);
+  --section-border-dotted: 2px dashed var(--font-color);
 
 
   --font-color: #C4C4D4;
@@ -27,19 +27,8 @@ html {
 
 }
 
-
 body {
   font-family: 'AvaraBold', sans-serif;
-}
-
-button:hover {
-  border-left: var(--section-border-dotted);
-
-  border-right: var(--section-border-dotted);
-}
-
-button:active {
-  border: 1px solid white;
 }
 
 
@@ -81,14 +70,12 @@ HEADER CSS START
 */
 
 header {
-  width: 500px;
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: var(--section-border-top);
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
 }
@@ -98,10 +85,10 @@ button {
   border: none;
   font-family: inherit;
   background-color: inherit;
+  padding: 0 20px;
 }
 
-button:hover {
-}
+
 
 /*
 HEADER CSS END
@@ -159,13 +146,9 @@ MENU CSS START
   text-align: center;  
 }
 
-h1 {
-  margin-top: 20px;
-}
 
 .menu-item-name {
   font-size: 1.2rem;
-  margin-top: 10px;
 }
 
 .menu-item-price {
@@ -181,11 +164,20 @@ h1 {
 }
 
 .menu-item-name, .menu-item-price, .menu-item-description {
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
-#chef-div .menu-item:last-child {
+#chef-div .menu-item:last-child, 
+#cocktail-div .menu-item:last-child,
+#desert-div .menu-item:last-child {
   border: none;
+}
+
+#desert-div .menu-item:last-child {
+  border: none;
+}
+#desert-div {
+  border-bottom: var(--section-border-top);
 }
 
 /*

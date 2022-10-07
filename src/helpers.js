@@ -32,3 +32,5 @@ const markup = elFactory(
 
 document.body.appendChild(markup)
 */
+export const getCSSVariable = (variableName) => getComputedStyle(document.documentElement).getPropertyValue(`--${variableName}`)
+  

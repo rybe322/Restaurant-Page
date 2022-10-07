@@ -2,7 +2,9 @@ import { Header } from "./header"
 import { Home } from "./home"
 import { Menu } from "./menu"
 import { Contact } from "./contact"
+import { getCSSVariable } from "./helpers"
 import { createHTMLElement } from "./helpers"
+
 
 export const Root = () => {
   const root = document.querySelector('#root')
@@ -37,7 +39,7 @@ export const Root = () => {
     */
   }
 
-  const getCSSVariable = (variableName) => getComputedStyle(document.documentElement).getPropertyValue(`--${variableName}`)
+  //const getCSSVariable = (variableName) => getComputedStyle(document.documentElement).getPropertyValue(`--${variableName}`)
   
 
   const render = (button) => {

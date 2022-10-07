@@ -9,6 +9,8 @@ import { Header } from "./header";
 import { Root } from "./root";
 import './styles/reset_heavy.css'
 import './styles/styles.css'
+import { getCSSVariable } from "./helpers";
+
 
 function handleButtonClick() {
   /*
@@ -33,8 +35,14 @@ function handleButtonClick() {
 
 Root().initialLoad()
 
+function handleMouseEnter() {
+  this.style.borderLeft = getCSSVariable('section-border-dotted')
+  this.style.borderRight = getCSSVariable('section-border-dotted')
+}
 
 
 const buttons = document.querySelectorAll('button')
 console.log(buttons)
 buttons.forEach(b => b.addEventListener('click', handleButtonClick))
+
+buttons.forEach(b => b.addEventListener('mouseenter', handleMouseEnter))
